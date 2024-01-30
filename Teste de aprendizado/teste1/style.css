@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+Body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+Div{
+    font-size: 20px;
+}
+
+p{
+    font-family: cursive;
+    font-size: 15px;
+}
+
+div > p {
+    display: none;
+}
+
+div#fotos:hover > p{
+    display: block;
+}
+
+div#novidades:hover > p{
+    display: block;
+}
+
+div#cat:hover > p{
+    display: block;
+}
+
+p.opcao:hover{
+    width: 200px;
+    background-color: #ffff04;
+    color: red;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    background-color: #ffff04;
+    color: red;
+}

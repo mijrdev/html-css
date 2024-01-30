@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML 5</p>
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio><!-- Formatos compatíveis MP3 WAV OGG-->
+    <audio preload="metadata" autoplay controls loop><!-- TAG preload serve para definir o tipo de inicialização, como "auto" começa automaticamente ao carregar a página, "metadata" carrega parte do arquivo, mas precisar ser iniciado pelo play, "none" não carrega nada do arquivo, apenas se der o comando que começa a contabilizar-->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.mp3" type="audio/ogg">
+        <source src="midia/guanacast-33.mp3" type="audio/wav"><!--Evitar a usar o arquivo WAV-->
+        <p>Infelizmente seu navegador não consegue reproduzir audio <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP#</a> </p>
+    </audio>
+</body>
+</html>
