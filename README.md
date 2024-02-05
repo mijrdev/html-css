@@ -3,4 +3,4 @@
 
  Aprendendo HTML e CSS, estudando armazenamento no repositorio GitHub.
 
- <a href=https://mijrdev.github.io/html-css/Exercicios/001>Executar o exercício 001</a>
+ <a href="https://mijrdev.github.io/html-css/Exercicios/001/index.html">Executar o exercício 001</a>
