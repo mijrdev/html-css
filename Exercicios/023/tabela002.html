@@ -12,6 +12,13 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         td, th{
@@ -27,6 +34,16 @@
             background-color: gray;
             color: white;
         }
+
+        thead > tr > th{
+            position: sticky;
+            top: -2px;
+            background-color: gray;
+        } /*Manter fixo o título da tabela*/
+
+        tbody > tr:nth-child(even){ /*Even = par e odd = impar, ou podemos usar 2n-1 = impar e 2n = par*/
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
@@ -34,6 +51,7 @@
     <!--
         Anatomia para tabelas grandes
         Table
+            Caption = Legenda da tabela
             Thead
                 tr, td, th
             Tbody
@@ -42,10 +60,11 @@
                 tr, td, th
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
            <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
            </tr>
         </thead>
         <tbody>
@@ -53,14 +72,82 @@
                 <td>São Paulo</td>
                 <td class="num">45.919,49</td>
             </tr>
-            tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45.919,49</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45.919,49</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45.919,49</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45.919,49</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45.919,49</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45.919,49</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45.919,49</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45.919,49</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45.919,49</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45.919,49</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45.919,49</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45.919,49</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45.919,49</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45.919,49</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45.919,49</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45.919,49</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45.919,49</td>
+            </tr>
+            <tr>
                 <td>Minas Gerais</td>
                 <td class="num">45.919,49</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>123.456,00</strong></td>
             </tr>
         </tfoot>
